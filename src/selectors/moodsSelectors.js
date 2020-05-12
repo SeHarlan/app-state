@@ -1,7 +1,7 @@
 export const getMoodsState = state => state.moods;
 
-export const getFace = () => {
-  const { coffees, naps, studies, snacks } = getMoodsState();
+export const getFace = (state) => {
+  const { coffees, naps, studies, snacks } = getMoodsState(state);
 
   const isTired = coffees < 1 && naps < 1;
   const isHyper = coffees > 3;
