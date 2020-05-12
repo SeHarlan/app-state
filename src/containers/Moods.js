@@ -14,10 +14,10 @@ const Moods = () => {
   return (
     <>
       <Controls>
-        <button onClick={() => dispatch(drinkCoffee)}>coffee - {coffees}</button>
-        <button onClick={() => dispatch(eatSnack)}>snacks - {snacks}</button>
-        <button onClick={() => dispatch(takeNap)}>naps - {naps}</button>
-        <button onClick={() => dispatch(study)}>studies - {studies}</button>
+        <button onClick={() => dispatch(drinkCoffee())}>coffee - {coffees}</button>
+        <button onClick={() => dispatch(eatSnack())}>snacks - {snacks}</button>
+        <button onClick={() => dispatch(takeNap())}>naps - {naps}</button>
+        <button onClick={() => dispatch(study())}>studies - {studies}</button>
       </Controls>
       <Face emoji={face} />
     </>
