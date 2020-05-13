@@ -6,7 +6,7 @@ const defaultState = {
   naps: 0,
   studies: 0
 };
-export default function reducer(state = defaultState, { type, payload }) {
+export default function reducer(state = defaultState, { type }) {
   switch(type) {
     case DRINK_COFFEE:
       return { ...state, coffees: state.coffees + 1 };
